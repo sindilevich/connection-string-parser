@@ -1,0 +1,40 @@
+{
+	"name": "connection-string-parser",
+	"version": "1.0.0",
+	"description": "A generic connection string parser/formatter",
+	"main": "index.js",
+	"scripts": {
+		"build": "npm run clean && npm run lint && npm run tsc -- --pretty",
+		"clean": "rimraf dist",
+		"lint": "npm run tslint src/**/*.ts",
+		"tsc": "tsc",
+		"tslint": "tslint"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sindilevich/connection-string-parser.git"
+	},
+	"keywords": [
+		"database",
+		"database-connection",
+		"connection-string",
+		"parser",
+		"typescript",
+		"nodejs",
+		"browser"
+	],
+	"author": "Matanel Sindilevich",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/sindilevich/connection-string-parser/issues"
+	},
+	"homepage": "https://github.com/sindilevich/connection-string-parser#readme",
+	"devDependencies": {
+		"rimraf": "^2.6.2",
+		"tslint": "^5.9.1",
+		"typescript": "^2.7.2"
+	},
+	"dependencies": {
+		"tslib": "^1.9.0"
+	}
+}
