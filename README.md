@@ -4,7 +4,7 @@ This project aims to provide a connection string parser/formatter for `node.js` 
 # The Need
 Mostly, connecting to a database requires to provide some sort of a connection string: a URI that points to one or more database hosts, supplies connection credentials, and allows to further configure the connection via database-specific options.
 
-As an example, here is a MongoDB connection string: `mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][?options]]`. It nicely combines a large set of database connection information and configuration data into a compact implementation. Let's look at the connection string components:
+As an example, here is a `MongoDB` connection string: `mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][?options]]`. It nicely combines a large set of database connection information and configuration data into a compact implementation. Let's look at the connection string components:
 
 * Scheme: `mongodb://`
 * Credentials: `username:password`
@@ -12,7 +12,7 @@ As an example, here is a MongoDB connection string: `mongodb://[username:passwor
 * Database name: `database`
 * Connection-specific options: `options`
 
-Here is another example, a MySQL connection string this time: `mysql://user:password@host:port/db?debug=true&charset=BIG5_CHINESE_CI&timezone=-0700`. It features the same components as the MongoDB connection string, and closely resembles all other possible connection strings, expressed as a URI.
+Here is another example, a `MySQL` connection string this time: `mysql://user:password@host:port/db?debug=true&charset=BIG5_CHINESE_CI&timezone=-0700`. It features the same components as the `MongoDB` connection string, and closely resembles all other possible connection strings, expressed as a URI.
 
 Yet the most intriguing part, is that a project creator can invent his own URI-based connection string and use it to convey his project-specific configurations and options as long as they fit a URI concept and format.
 
@@ -34,7 +34,7 @@ And this is the ultimate aim of this project: **A generic connection string pars
 The project is written in `Typescript`. Below usage examples for `Typescript`-based projects.
 
 ## Add to the project
-Simply download the `connection-string-parser.ts` file to your project's folder.
+Simply run `npm install connection-string-parser` in your project's folder.
 
 ## Parse
 With a connection string as the input, let's convert it to a connection object for further use.
@@ -44,7 +44,7 @@ Each component of a connection string **has to be URI-encoded** with the `encode
 The result connection object will have each component automatically decoded with the `decodeURIComponent` method.
 
 ```typescript
-import { ConnectionStringParser } from "./connection-string-parser";
+import { ConnectionStringParser } from "connection-string-parser";
 
 const connectionStringParser = new ConnectionStringParser({
 	scheme: "mongodb",
@@ -78,7 +78,7 @@ With a connection object as the input, let's convert it to a connection string f
 The result connection string will have each of its component automatically encoded with the `encodeURIComponent` method.
 
 ```typescript
-import { ConnectionStringParser } from "./connection-string-parser";
+import { ConnectionStringParser } from "connection-string-parser";
 
 const connectionStringParser = new ConnectionStringParser({
 	scheme: "mongodb",
