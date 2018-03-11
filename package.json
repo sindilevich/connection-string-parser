@@ -1,6 +1,6 @@
 {
 	"name": "connection-string-parser",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A generic connection string parser/formatter",
 	"main": "./dist/connection-string-parser.js",
 	"types": "./dist/connection-string-parser.d.ts",

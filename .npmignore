@@ -4,3 +4,7 @@ src
 # Typescript-related configurations
 tsconfig.json
 tslint.json
+
+# Editor configurations
+.vscode
+.editorconfig
