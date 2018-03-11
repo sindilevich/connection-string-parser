@@ -1,0 +1,6 @@
+# Source directories
+src
+
+# Typescript-related configurations
+tsconfig.json
+tslint.json

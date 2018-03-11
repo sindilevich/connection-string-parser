@@ -2,11 +2,14 @@
 	"name": "connection-string-parser",
 	"version": "1.0.0",
 	"description": "A generic connection string parser/formatter",
-	"main": "index.js",
+	"main": "./dist/connection-string-parser.js",
+	"types": "./dist/connection-string-parser.d.ts",
 	"scripts": {
-		"build": "npm run clean && npm run lint && npm run tsc -- --pretty",
+		"build": "npm run tsc -- --pretty",
 		"clean": "rimraf dist",
 		"lint": "npm run tslint src/**/*.ts",
+		"prebuild": "npm run clean && npm run lint",
+		"prepublish": "npm run build",
 		"tsc": "tsc",
 		"tslint": "tslint"
 	},
