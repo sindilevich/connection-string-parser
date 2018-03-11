@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"target": "ES2017",
+		"module": "umd",
+		"outDir": "dist",
+		"importHelpers": true,
+		"strict": true,
+		"esModuleInterop": true,
+		"declaration": true
+	}
+}
