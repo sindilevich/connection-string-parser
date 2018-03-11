@@ -60,15 +60,15 @@ The code above should yield a connection object with the following information:
 {
 	"scheme": "mongodb",
 	"hosts": [{
-		"host": "host",
+		"host": "ho$t",
 		"port": 1234
 	}],
 	"username": "s#perus$r",
 	"password": "unbr#k@bl$",
+	"endpoint": "$my-db",
 	"options": {
 		"replicaSet": "$super@"
-	},
-	"endpoint": "$my-db"
+	}
 }
 ```
 
@@ -88,15 +88,15 @@ const connectionStringParser = new ConnectionStringParser({
 const connectionString = connectionStringParser.format({
 	"scheme": "mongodb",
 	"hosts": [{
-		"host": "host",
+		"host": "ho$t",
 		"port": 1234
 	}],
 	"username": "s#perus$r",
 	"password": "unbr#k@bl$",
+	"endpoint": "$my-db",
 	"options": {
 		"replicaSet": "$super@"
-	},
-	"endpoint": "$my-db"
+	}
 });
 ```
 
