@@ -3,8 +3,12 @@ src
 
 # Typescript-related configurations
 tsconfig.json
-tslint.json
+
+# Linter-related configurations
+.eslintignore
+.eslintrc.json
+.prettierrc.json
 
 # Editor configurations
-.vscode
 .editorconfig
+.vscode

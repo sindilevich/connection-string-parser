@@ -1,0 +1,38 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "tsconfig.json",
+		"sourceType": "module"
+	},
+	"plugins": [
+		"@typescript-eslint/eslint-plugin"
+	],
+	"extends": [
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:import/typescript"
+	],
+	"root": true,
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"rules": {
+		"@typescript-eslint/interface-name-prefix": "off",
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-non-null-assertion": "off",
+		"comma-dangle": ["error"],
+		"import/order": ["error", {"alphabetize": {"order": "asc", "caseInsensitive": true}}],
+		"indent": ["error", "tab", {"SwitchCase": 1}],
+		"linebreak-style": ["error", "unix"],
+		"no-multiple-empty-lines": ["error", {"max": 1, "maxBOF": 0, "maxEOF": 0}],
+		"quotes": ["error", "double", {"allowTemplateLiterals": true}],
+		"semi": ["error", "always"],
+		"sort-keys": ["error", "asc", {"caseSensitive": false, "natural": true}]
+	}
+}
